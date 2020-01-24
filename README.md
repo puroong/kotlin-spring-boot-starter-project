@@ -27,7 +27,7 @@
 > datastore: connector for database(SQL or NoSQL)
 > JPA provider: ORM(Hibernate, EclipseLink etc...)
 
-### 1.3. Spring Data; What is it??? ()
+## 1.3. Spring Data; What is it??? ([link](https://www.infoq.com/articles/spring-data-intro/))
 
 * Spring Data: High level SprinSource project whose purpose is to unify and ease to access to different kinds of persistence stores, both relational database systems and NoSQL data stores.
 
@@ -35,7 +35,7 @@
 
 > Hibernate(JPA provider)엔 update, save 같은 기본적인 메소드들만 있는데 Spring Data가 findByOne, findBy?? 같은 메소드들을 갖고 있는 Repository 인터페이스들을 제공 함으로써 코드 작성량을 줄여줌
 
-## 1.3.1. Spring Data JPA and Hibernate([link](https://dzone.com/articles/what-is-the-difference-between-hibernate-and-sprin-1))
+### 1.3.1. Spring Data JPA and Hibernate([link](https://dzone.com/articles/what-is-the-difference-between-hibernate-and-sprin-1))
 
 
 ## 1.4. H2 Database; What is it?((link)[http://www.h2database.com/html/main.html])

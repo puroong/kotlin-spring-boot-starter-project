@@ -50,3 +50,41 @@
 # 2. Gradle ([link](https://docs.gradle.org/current/userguide/userguide.html))
 
 [Gradle with Kotlin DSL](https://github.com/puroong/gradle-tutorial)
+
+# 3. Add Kotlin Controller
+
+`src/main/kotlin/com/example/starterproj/HtmlController.kt`
+
+```
+package com.example.blog
+
+import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
+import org.springframework.ui.set
+import org.springframework.web.bind.annotation.GetMapping
+
+@Controller
+class HtmlController {
+
+  @GetMapping("/")
+  fun blog(model: Model): String {
+    model["title"] = "Blog"
+    return "blog" // `src/main/resources/templates/blog.mustache`
+  }
+
+}
+```
+
+> model에 값을 추가하면 blog.mustache에서 그 값을 사용할 수 있음
+
+```
+{{> header}}
+
+<h1>{{title}}</h1>
+
+{{> footer}}
+```
+
+> {{> ??? }} => ???.mustache 삽입
+
+* [Spring Boot Model](http://zetcode.com/springboot/model/)

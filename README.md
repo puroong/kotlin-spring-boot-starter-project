@@ -46,3 +46,7 @@
 
 * Spring Boot: Framework that bundles all dependencies (Spring MVC, Spring Data, Hibernate etc)
 > Spring Boot 쓰면 XML로 설정 안해도 됨
+
+# 2. Gradle ([link](https://docs.gradle.org/current/userguide/userguide.html))
+
+[Gradle with Kotlin DSL](https://github.com/puroong/gradle-tutorial)

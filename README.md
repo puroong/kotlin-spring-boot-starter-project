@@ -89,8 +89,38 @@ class HtmlController {
 
 * [Spring Boot Model](http://zetcode.com/springboot/model/)
 
-## Testing with JUnit5
+# 4. Testing with JUnit5
 
-### JUnit5 ([link](https://junit.org/junit5/docs/current/user-guide/#overview))
+## JUnit5 ([link](https://junit.org/junit5/docs/current/user-guide/#overview))
 
-### Spring Testing ([link](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#testing-introduction))
+## Spring Testing ([link](https://docs.spring.io/spring/docs/current/spring-framework-reference/testing.html#testing-introduction))
+
+# 5. Creating your own Extensions
+
+# 6. Persistence with JPA
+
+## 6.1. Kotlin AllOpen Plugin ([link](https://kotlinlang.org/docs/reference/compiler-plugins.html))
+
+```
+Kotlin has classes and their members final by default, which makes it inconvenient to use frameworks and libraries such as Spring AOP that require classes to be open. The all-open compiler plugin adapts Kotlin to the requirements of those frameworks and makes classes annotated with a specific annotation and their members open without the explicit open keyword.
+```
+
+* Kotlin all-open compiler plugin makes classes annotated with a specific annotation and their members open without hte explicit open keyword
+
+* JPA is not designed to work with immutable classes or the methods generated automatically by data classes. So don't use data classes with val.
+
+* User에 대한 Repository를 만들고 싶을 때 JPA Repository를 interface에 상속받고 구현하지 않는다면 User에 있는 property 이름들을 참고하여 자동으로 findBy??? 함수들을 선언할 수 있고 이를 구현하지 않아도 알아서 생성된다. (User에 없는 property 이름들을 사용하면 에러 뜸)
+
+### 6.1.1. Spring AOP
+
+* [link1](https://jojoldu.tistory.com/69?category=635883)
+* [link2](https://jojoldu.tistory.com/70?category=635883)
+* [link3](https://jojoldu.tistory.com/71?category=635883)
+* [link4](https://jojoldu.tistory.com/72?category=635883)
+
+### 6.1.2. Spring DI(Dependency Injection)([link](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring))
+
+* Autowired([link](https://www.baeldung.com/spring-annotations-resource-inject-autowire))
+### 6.1.3. Spring Bean([link](https://www.baeldung.com/spring-bean))
+
+### 6.1.4. Spring IOC([link](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring))

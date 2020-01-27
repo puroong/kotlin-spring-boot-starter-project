@@ -126,3 +126,5 @@ Kotlin has classes and their members final by default, which makes it inconvenie
 ### 6.1.4. Spring IOC([link](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring))
 
 # 7. Implementing the blog engine
+
+# 8. Exposing HTTP API
